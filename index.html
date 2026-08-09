@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全国一斉霊的感知力テスト</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #1e1e1e;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        h1, h2, h3 {
+            color: #ff5252;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+        .notice {
+            background: #2c2c2c;
+            border-left: 4px solid #ff5252;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: #252525;
+            border-radius: 5px;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .options label {
+            display: block;
+            margin: 8px 0;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 3px;
+            transition: background 0.2s;
+        }
+        .options label:hover {
+            background: #333;
+        }
+        button {
+            background-color: #ff5252;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1em;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #ff1744;
+        }
+        .media-placeholder {
+            color: #888;
+            font-style: italic;
+            background: #111;
+            padding: 10px;
+            border: 1px dashed #444;
+            margin: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- スタート画面 -->
+    <div id="screen-start" class="section active">
+        <h1>全国一斉霊的感知力テスト</h1>
+        <p><strong>（100点）</strong></p>
+        
+        <div class="notice">
+            <h3>注意事項</h3>
+            <p><strong>受験環境について：</strong>通信が安定したネットワーク環境で受験してください。</p>
+            <p>選択肢が表示されなかった場合はページを更新し、選択肢が表示された状態で受験を続けてください。</p>
+            <p><strong>音声について：</strong>設問には音声ファイルが含まれます。音声を確認できる環境下で受験してください。</p>
+            <p><strong>不正行為について：</strong>入力したIDに該当する財団職員本人が受験してください。本人以外の受験はできません。その他不正行為が発覚した場合は受験が中断されます。</p>
+            <p><strong>試験の進行について：</strong>問題は4問あり、第1問は「霊的なものへの感知力」、第2問は「超自然的なものへの感知力」、第3問は「運命や閃きへの感知力」、第4問は「[削除されています。]」の問題です。</p>
+            <p>問題はチェックボックスにチェックを入れることで回答してください。</p>
+            <p>ブラウザバック、ページの更新が行われた場合は回答のチェックが外れていますので、再度チェックし直してください。</p>
+            <p>問題文中の指示は必ず守り、実行してください。指示に従わない、指示と違う行動を行うなどの行為は大変危険です。</p>
+            <p><strong>Morris値アラートについて：</strong>受験内容の特性上Morris値が上昇する場合があります。アラートが出た場合は指示に従ってください。</p>
+        </div>
+
+        <button onclick="nextSection(1)">受験開始</button>
+    </div>
+
+    <!-- 第1問 -->
+    <div id="screen-1" class="section">
+        <h2>第1問 霊的なものへの感知力</h2>
+        <p>次の問い（問1〜9）に答えよ。（配点 33）</p>
+
+        <div class="question">
+            <p><strong>問1:</strong> 次の内容を行ないなさい。<br>
+            目を閉じて現在住んでいる家の玄関に立っている自分を想像する。家の窓を一つずつ開けていく。開け終わったら玄関に戻る。今度は家の中の窓を全部閉めていく。再び玄関に戻る。<br>
+            上記を行った時、家の中に人がいたか。またそれは何人いたか。選択肢から選べ。</p>
+            <div class="options">
+                <label><input type="radio" name="q1_1"> 0人</label>
+                <label><input type="radio" name="q1_1"> 1人</label>
+                <label><input type="radio" name="q1_1"> 2人以上</label>
+                <label><input type="radio" name="q1_1"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問2:</strong> [削除されています。]はお母さんか答えよ。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q1_2"> はい</label>
+                <label><input type="radio" name="q1_2"> いいえ</label>
+                <label><input type="radio" name="q1_2"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問3:</strong> [削除されています。]の人物を可哀想だと思うか答えよ。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q1_3"> 思う</label>
+                <label><input type="radio" name="q1_3"> 思わない</label>
+                <label><input type="radio" name="q1_3"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問4:</strong> 以下の音声を聞きなさい。これはとある女性が死亡する際に録音された音声である。女性がなぜ死亡したか選択肢から選べ。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q1_4"> 事故死</label>
+                <label><input type="radio" name="q1_4"> 病死</label>
+                <label><input type="radio" name="q1_4"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問5:</strong> 次のシーンを思い浮かべ、文中の質問の答えとして適切なものを選択肢から選べ。<br>
+            旅行先、旅館の和室で目が覚める。一緒に来ていた友人の姿はなく、自分の布団の周りを5〜6人ほどの男が取り囲んでいる。男はどれも同じ顔をしている。あなたには男の名前がなぜか分かる。男の名前はどれか答えよ。</p>
+            <div class="options">
+                <label><input type="radio" name="q1_5"> 選択肢A</label>
+                <label><input type="radio" name="q1_5"> 選択肢B</label>
+                <label><input type="radio" name="q1_5"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問6:</strong> [削除されています。]は心霊写真である。霊が映っている箇所を答えよ。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q1_6"> 上部</label>
+                <label><input type="radio" name="q1_6"> 下部</label>
+                <label><input type="radio" name="q1_6"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問7:</strong> 次の図はどちらも身元不明遺体の似顔絵である。2011年に神奈川県相模原市で発見されたのはどちらか選べ。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q1_7"> A</label>
+                <label><input type="radio" name="q1_7"> B</label>
+                <label><input type="radio" name="q1_7"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問8:</strong> 現在あなたがテストを受験している部屋に霊が来ている。近くの窓、もしくはドアに向かって今そっちに行くよと声をかけなさい。その時返ってきた反応を選択肢から選べ。</p>
+            <div class="options">
+                <label><input type="radio" name="q1_8"> 物音がした</label>
+                <label><input type="radio" name="q1_8"> 声が聞こえた</label>
+                <label><input type="radio" name="q1_8"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問9:</strong> [削除されています。]はとある女性宅のドアに貼り出された張り紙である。現在この女性は死亡しているが、その死因を答えよ。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q1_9"> 選択肢A</label>
+                <label><input type="radio" name="q1_9"> 選択肢B</label>
+                <label><input type="radio" name="q1_9"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <button onclick="nextSection(2)">次の設問へ進む</button>
+    </div>
+
+    <!-- 第2問 -->
+    <div id="screen-2" class="section">
+        <h2>第2問 超自然的なものへの感知力</h2>
+        <p>次の問い（問1〜9）に答えよ。（配点 33）</p>
+
+        <div class="question">
+            <p><strong>問1:</strong> 次の音声を聞いて頭に浮かんだ名前に最も近いものを、選択肢から選べ。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q2_1"> 選択肢A</label>
+                <label><input type="radio" name="q2_1"> 選択肢B</label>
+                <label><input type="radio" name="q2_1"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問2:</strong> 次のうち最も関わってはいけないものはどれか。選択肢から選べ。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q2_2"> A</label>
+                <label><input type="radio" name="q2_2"> B</label>
+                <label><input type="radio" name="q2_2"> C</label>
+                <label><input type="radio" name="q2_2"> D</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問3:</strong> 次のうち一つは祟りを受けたテレビ番組の映像である。祟りを受けたものはどれか。選択肢から選べ。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q2_3"> A</label>
+                <label><input type="radio" name="q2_3"> B</label>
+                <label><input type="radio" name="q2_3"> C</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問4:</strong> 次の中で感染呪術において最も強い呪いはどれか。選択肢から選べ。</p>
+            <div class="options">
+                <label><input type="radio" name="q2_4"> 選択肢A</label>
+                <label><input type="radio" name="q2_4"> 選択肢B</label>
+                <label><input type="radio" name="q2_4"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問5:</strong> [削除されています。]が表しているものを選択肢から選べ。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q2_5"> 選択肢A</label>
+                <label><input type="radio" name="q2_5"> 選択肢B</label>
+                <label><input type="radio" name="q2_5"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問6:</strong> [削除されています。]は1992年に実行された呪術で実際に依代とされたものである。これの材料となったものを選択肢から選べ。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q2_6"> 選択肢A</label>
+                <label><input type="radio" name="q2_6"> 選択肢B</label>
+                <label><input type="radio" name="q2_6"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問7:</strong> [削除されています。]は広島県に住む大学生のSNSアカウントからアップロードされた画像である。この画像をアップロードした者は山口県の山中を車で移動した際にその時の状況をリアルタイムでSNSに書き込み、画像のアップロード後32分後の投稿を最後に消息を絶った。最後の書き込みの内容を選択肢から選べ。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q2_7"> 選択肢A</label>
+                <label><input type="radio" name="q2_7"> 選択肢B</label>
+                <label><input type="radio" name="q2_7"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問8:</strong> 次の内容を行い、その後感じたものとして最も近いものを選択肢から選べ。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <p>上の図を見ながら柏手を二回打つ。次の文言を唱え、一礼する。<br>
+            アートマーナン ティヤクトヴァー ブータン ブーヤーサム</p>
+            <div class="options">
+                <label><input type="radio" name="q2_8"> 選択肢A</label>
+                <label><input type="radio" name="q2_8"> 選択肢B</label>
+                <label><input type="radio" name="q2_8"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問9:</strong> 次の文書はとあるインターネット上の書き込みである。文中出来事の原因について適切なものを選択肢から選べ。</p>
+            <div class="notice">
+                <p>249 ◆Pf5jCd7Or 2007/07/25(水) [削除されています。] ID:???<br>
+                見てる人いないかもしれないけど書くわ。昔妹が近所の祠を壊しておかしくなったことがある...</p>
+            </div>
+            <div class="options">
+                <label><input type="radio" name="q2_9"> 選択肢A</label>
+                <label><input type="radio" name="q2_9"> 選択肢B</label>
+                <label><input type="radio" name="q2_9"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <button onclick="nextSection(3)">次の設問へ進む</button>
+    </div>
+
+    <!-- 第3問 -->
+    <div id="screen-3" class="section">
+        <h2>第3問 運命や閃きへの感知力</h2>
+        <p>次の問い（問1〜9）に答えよ。（配点 34）</p>
+
+        <div class="question">
+            <p><strong>問1:</strong> [削除されています。]は2045年時点で収容状態にあるか答えよ。</p>
+            <div class="options">
+                <label><input type="radio" name="q3_1"> はい</label>
+                <label><input type="radio" name="q3_1"> いいえ</label>
+                <label><input type="radio" name="q3_1"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問2:</strong> 2045年までに死亡するG7とEUの首脳は何人か。選択肢から選べ。なお死亡時に退任している場合はカウントしないものとする。</p>
+            <div class="options">
+                <label><input type="radio" name="q3_2"> 0人</label>
+                <label><input type="radio" name="q3_2"> 1人以上</label>
+                <label><input type="radio" name="q3_2"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問3:</strong> 2045年時点で存在しないものはどれか。選択肢から選べ。</p>
+            <div class="options">
+                <label><input type="radio" name="q3_3"> 選択肢A</label>
+                <label><input type="radio" name="q3_3"> 選択肢B</label>
+                <label><input type="radio" name="q3_3"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問4:</strong> 次のうち存在してはいけない国はどれか。選択肢から選べ。</p>
+            <div class="options">
+                <label><input type="radio" name="q3_4"> A</label>
+                <label><input type="radio" name="q3_4"> B</label>
+                <label><input type="radio" name="q3_4"> C</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問5:</strong> [削除されています。]と関係のあるものはどれか。選択肢から選べ。</p>
+            <div class="options">
+                <label><input type="radio" name="q3_5"> 選択肢A</label>
+                <label><input type="radio" name="q3_5"> 選択肢B</label>
+                <label><input type="radio" name="q3_5"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問6:</strong> あなたが最も関わりたくない、嫌な感じのするものはどれか。選択肢から選べ。</p>
+            <div class="options">
+                <label><input type="radio" name="q3_6"> 選択肢A</label>
+                <label><input type="radio" name="q3_6"> 選択肢B</label>
+                <label><input type="radio" name="q3_6"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問7:</strong> [削除されています。]は財団に収容されているとあるアノマリーである。このアノマリーの異常性を表しているものとして最も相応しい文章を選択肢から選べ。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q3_7"> 選択肢A</label>
+                <label><input type="radio" name="q3_7"> 選択肢B</label>
+                <label><input type="radio" name="q3_7"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問8:</strong> [削除されています。]の人物が笑っているのはなぜか。理由を選択肢から選べ。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q3_8"> 選択肢A</label>
+                <label><input type="radio" name="q3_8"> 選択肢B</label>
+                <label><input type="radio" name="q3_8"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問9:</strong> 次の文書はとあるメッセージアプリでのやり取りのスクリーンショットである。右側が川口藍子氏、左側がその息子である達弥氏のアカウントから送信されたメッセージである。なお達弥氏は2日前に植物状態判定を受けている。これを読み、当てはまるものを選択肢から選べ。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q3_9"> 選択肢A</label>
+                <label><input type="radio" name="q3_9"> 選択肢B</label>
+                <label><input type="radio" name="q3_9"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <button onclick="nextSection(4)">次の設問へ進む</button>
+    </div>
+
+    <!-- 第4問 -->
+    <div id="screen-4" class="section">
+        <h2>第4問 [削除されています。]への感知力</h2>
+        <p>次の問い（問1〜13）に答えよ。（配点 0）</p>
+
+        <div class="question">
+            <p><strong>問1:</strong> [削除されています。]はあなたのお母さんである。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q4_1"> はい</label>
+                <label><input type="radio" name="q4_1"> いいえ</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問2:</strong> このテストを受験中一度でも大きな音がしたか。選択肢から選べ。</p>
+            <div class="options">
+                <label><input type="radio" name="q4_2"> はい</label>
+                <label><input type="radio" name="q4_2"> いいえ</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問3:</strong> このテストを受講中一度でも何かの気配を感じたか。選択肢から選べ。</p>
+            <div class="options">
+                <label><input type="radio" name="q4_3"> はい</label>
+                <label><input type="radio" name="q4_3"> いいえ</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問4:</strong> このテストを受けているのはあなたを含む一部の財団職員のみである。対象の職員が選出された理由を選べ。</p>
+            <div class="options">
+                <label><input type="radio" name="q4_4"> 選択肢A</label>
+                <label><input type="radio" name="q4_4"> 選択肢B</label>
+                <label><input type="radio" name="q4_4"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問5:</strong> 次のインタビュー記録を読み、感じたことを選択肢から選べ。</p>
+            <div class="notice">
+                <p>対象: 舞沢暢子氏<br>付記: ...ホラー作家として活動しています...</p>
+            </div>
+            <div class="options">
+                <label><input type="radio" name="q4_5"> 選択肢A</label>
+                <label><input type="radio" name="q4_5"> 選択肢B</label>
+                <label><input type="radio" name="q4_5"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問6:</strong> 一ヶ月以内に体調を崩したか。選択肢から選べ。</p>
+            <div class="options">
+                <label><input type="radio" name="q4_6"> はい</label>
+                <label><input type="radio" name="q4_6"> いいえ</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問7:</strong> [削除されています。]に当てはまるものを選択肢から選べ。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q4_7"> 選択肢A</label>
+                <label><input type="radio" name="q4_7"> 選択肢B</label>
+                <label><input type="radio" name="q4_7"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問8:</strong> あなたは自分の運命を呪うか答えよ。</p>
+            <div class="options">
+                <label><input type="radio" name="q4_8"> 呪う</label>
+                <label><input type="radio" name="q4_8"> 呪わない</label>
+                <label><input type="radio" name="q4_8"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問9:</strong> 次の音声を聞きなさい。その内容に近いものを選択肢から選べ。</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q4_9"> 選択肢A</label>
+                <label><input type="radio" name="q4_9"> 選択肢B</label>
+                <label><input type="radio" name="q4_9"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問10:</strong> [削除されています。]</p>
+            <div class="media-placeholder">[削除されています。]</div>
+            <div class="options">
+                <label><input type="radio" name="q4_10"> 選択肢A</label>
+                <label><input type="radio" name="q4_10"> 選択肢B</label>
+                <label><input type="radio" name="q4_10"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問11:</strong> 以下はあなたの死因の候補である。選択肢から選べ。</p>
+            <div class="options">
+                <label><input type="radio" name="q4_11"> 選択肢A</label>
+                <label><input type="radio" name="q4_11"> 選択肢B</label>
+                <label><input type="radio" name="q4_11"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問12:</strong> 次の文書はとある霊的処置のプロトコルである。これを読み、感じたことを選択肢から選べ。</p>
+            <div class="notice">
+                <p>恐怖に対しての嫌悪感が著しく強い被検体、もしくは恐怖に対しての興味が著しく強い被検体を選出する。...</p>
+            </div>
+            <div class="options">
+                <label><input type="radio" name="q4_12"> 選択肢A</label>
+                <label><input type="radio" name="q4_12"> 選択肢B</label>
+                <label><input type="radio" name="q4_12"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>問13:</strong> 次のインタビュー記録を読み、感じたことを選択肢から選べ。</p>
+            <div class="notice">
+                <p>エージェント██: 例えばゲームなどがそうなのですが、この世には悪用することで人の行動を操り、誘導することができる仕掛けが存在するんです。...</p>
+            </div>
+            <div class="options">
+                <label><input type="radio" name="q4_13"> 選択肢A</label>
+                <label><input type="radio" name="q4_13"> 選択肢B</label>
+                <label><input type="radio" name="q4_13"> [削除されています。]</label>
+            </div>
+        </div>
+
+        <button onclick="finishTest()">テストを終了する</button>
+    </div>
+
+    <!-- 終了画面 -->
+    <div id="screen-end" class="section">
+        <h2>お疲れ様でした</h2>
+        <p>すべての設問が終了しました。データは財団に送信されました。</p>
+    </div>
+</div>
+
+<script>
+    function nextSection(sectionNum) {
+        // 現在のアクティブなセクションを隠す
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(sec => sec.classList.remove('active'));
+
+        // 指定のセクションを表示
+        const target = document.getElementById('screen-' + sectionNum);
+        if (target) {
+            target.classList.add('active');
+            window.scrollTo(0, 0);
+        }
+    }
+
+    function finishTest() {
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(sec => sec.classList.remove('active'));
+
+        const endScreen = document.getElementById('screen-end');
+        if (endScreen) {
+            endScreen.classList.add('active');
+            window.scrollTo(0, 0);
+        }
+    }
+</script>
+
+</body>
+</html>
